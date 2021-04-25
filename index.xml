@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tukmogi on tukmogi</title>
-    <link>https://example.com/</link>
+    <link>https://mogoria.github.io/</link>
     <description>Recent content in tukmogi on tukmogi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Posts</title>
-      <link>https://example.com/posts/</link>
+      <link>https://mogoria.github.io/posts/</link>
       <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/posts/</guid>
+      <guid>https://mogoria.github.io/posts/</guid>
       <description></description>
     </item>
     
