@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Tukmen Mogoria">
+  
+  
+  
+  
+  
+  <link rel="canonical" href="https://example.com/2021/aspire-ctf-web/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           AspireCTF Web Challenge | tukmogi
+       
+  </title>
+  <meta name="title" content="AspireCTF Web Challenge | tukmogi">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+  <link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/example.com"
+    },
+    "articleSection" : "posts",
+    "name" : "AspireCTF Web Challenge",
+    "headline" : "AspireCTF Web Challenge",
+    "description" : "Introduction This is a writeup on the Web Challenge of the Aspire CTF - 2021.\nAgentX Challenge Description: Where are you from? Challenge site The paste contained the ips below\n62.210.105.116 51.77.135.89 171.25.193.78 171.25.193.20 185.220.101.208 171.25.193.77 185.165.168.229 185.220.102.8 162.247.72.199 107.189.10.27 106.12.102.21 Following the access link, there is a PHP page that displays the IP address and errors out, Invalid Access! We can try to find out how developers access the IP address of a client.",
+    "inLanguage" : "en-us",
+    "author" : "tukmogi",
+    "creator" : "tukmogi",
+    "publisher": "tukmogi",
+    "accountablePerson" : "tukmogi",
+    "copyrightHolder" : "tukmogi",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-04-06 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-04-06 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/example.com\/2021\/aspire-ctf-web\/",
+    "wordCount" : "954",
+    "keywords" : [ "Aspire","CTF", "tukmogi"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://example.com">tukmogi</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://example.com">tukmogi</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">AspireCTF Web Challenge</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://example.com" rel="author">tukmogi</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2021-04-06 itemprop="datePublished">April 6, 2021</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://example.com/categories/aspire/"> aspire </a>
+                        <a href="https://example.com/categories/web/"> web </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        <img src="/images/aspire-ctf-web/aspire-web-thumb.png" class="featured_image">
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h2 id="introduction">Introduction</h2>
+<p>This is a writeup on the Web Challenge of the Aspire CTF - 2021.</p>
+<h2 id="agentx">AgentX</h2>
+<h3 id="challenge-description-where-are-you-from">Challenge Description: Where are you from?</h3>
+<p>Challenge site
+<img src="/images/aspire-ctf-web/4-2.png" alt="Challenge Site">
+The paste contained the ips below</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">62.210.105.116
+51.77.135.89
+171.25.193.78
+171.25.193.20
+185.220.101.208
+171.25.193.77
+185.165.168.229
+185.220.102.8
+162.247.72.199
+107.189.10.27
+106.12.102.21
+</code></pre></div><p>Following the access link, there is a PHP page that displays the IP address and errors out, Invalid Access! We can try to find out how developers access the IP address of a client. An interesting find is that there are headers used by proxies to identify the client sending the request. That is the X-FORWARDED-FOR header and the CLIENT-IP header. Trying out a request with the X-FORWARDED-HOST header set, we see that we can now manipulate the client IP.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -s -H <span style="color:#e6db74">&#39;x-forwarded-for: localhost&#39;</span> http://45.32.238.36/agentX/access.php ; echo
+</code></pre></div><p><img src="/images/aspire-ctf-web/4-3.png" alt="Agentx curl">
+Using the IPs obtained from the paste, we can try and brute-force for valid ones. Wfuzz was used for this but Burp Suite’s intruder could also work.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wfuzz -c -w clients.txt -H <span style="color:#e6db74">&#39;x-forwarded-for: FUZZ&#39;</span> http://45.32.238.36/agentX/access.php
+</code></pre></div><p><img src="/images/aspire-ctf-web/4-4.png" alt="Agentx flag">
+Another note is that, since the site reflects data sent from the X-FORWARDED-FOR and CLIENT-IP headers, it&rsquo;s vulnerable to Cross-Site Scripting (XSS). We can confirm this by trying out the payload: <code>X-FORWARDED-FOR: &lt;script&gt;alert(document.domain)&lt;/script&gt;</code></p>
+<h2 id="cookie-jar">Cookie Jar</h2>
+<h3 id="challenge-description-the-admin-has-your-flag">Challenge Description: The admin has your flag</h3>
+<p>Accessing the challenge site hints at a role-based website, admin privilege is needed to access the page.
+<img src="/images/aspire-ctf-web/5-2.png" alt=""></p>
+<p>Cookies are used to store content on the browser and are forwarded to the server on each request. Some authentication systems use cookies to automatically handle authentication. Checking out cookies on the website, we see that there is a cookie value called role.
+<img src="/images/aspire-ctf-web/5-3.png" alt="">
+Changing this value to admin and refreshing, the page, we get the flag.
+<img src="/images/aspire-ctf-web/5-4.png" alt=""></p>
+<h2 id="filer">Filer</h2>
+<h3 id="challenge-description-find-the-vulnerability-look-around-and-youll-find-the-flag-can-you-access-our-passwords">Challenge Description: Find the vulnerability, look around and you&rsquo;ll find the flag! Can you access our passwords?</h3>
+<p>Assessing the challenge site, we get this page.
+<img src="/images/aspire-ctf-web/6-2.png" alt="">
+We can try and find out the valid parameters on the website. Using the extension Param Miner on Burp Suite, we can try and find parameters on the website. Right-click on a request then click on ‘Guess GET parameters’, on the extensions tab, we get output from param miner. There is a valid parameter found called ‘file’.
+<img src="/images/aspire-ctf-web/6-3.png" alt="">
+Arjun can also be used.
+Passing a file name to the parameter displays it and that’s how we get the flag.
+<img src="/images/aspire-ctf-web/6-4.png" alt=""></p>
+<h2 id="method-man">Method man</h2>
+<h3 id="challenge-description-the-admin-is-particularly-fond-of-numbers-below-200-find-what-he-has-hidden">Challenge Description: The admin is particularly fond of numbers below 200. Find what he has hidden</h3>
+<p>Accessing the challenge site, we find this.
+<img src="/images/aspire-ctf-web/7-2.png" alt="">
+Once more, using param miner or Arjun, we discover a parameter called code.
+<img src="/images/aspire-ctf-web/7-3.png" alt="">
+Passing code 1, the page doesn’t display any content. Based on the hint from the home page, we can tell that the code could be anything between 1 and 200
+<img src="/images/aspire-ctf-web/7-4.png" alt="">
+We can use Burp Suite intruder to brute force for the right code. Send the request to Intruder, on the payloads tab, specify numbers as the payload type as numbers. Set the payload options to run from 1 to 200 and step once.
+<img src="/images/aspire-ctf-web/7-5.png" alt="">
+Filter the results by length. From that, we find that two requests are unique. Viewing the response of code 79, we find our flag.
+<img src="/images/aspire-ctf-web/7-6.png" alt="">
+Wfuzz can also be used to brute-force for the code since Burp intruder tends to be slow when using the community edition.
+<img src="/images/aspire-ctf-web/7-7.png" alt=""></p>
+<h2 id="words">Words</h2>
+<h3 id="words1-our-developer-left-something-for-you-find-it">Words1: Our developer left something for you. Find it</h3>
+<p>Accessing the challenge site, we find a webpage.
+<img src="/images/aspire-ctf-web/8-2.png" alt="">
+Based on the hint, we can create a wordlist on extensions for common backup files, configuration files and archives.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bak
+bk
+config
+cfg
+tar
+tar.gz
+tar.xz
+zip
+</code></pre></div><p>We can then use raft-medium-words.txt wordlists from Seclists together with our extension lists to brute force for anything left by the developer.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wfuzz -c --hc 404,403 -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words.txt -w extensions.txt http://144.202.34.159/words/FUZZ.FUZ2Z 
+</code></pre></div><p><img src="/images/aspire-ctf-web/wfuzz_word_one.png" alt="">
+We get the flag by accessing: <a href="http://144.202.34.159/words/.env.bak">http://144.202.34.159/words/.env.bak</a>
+<img src="/images/aspire-ctf-web/word1_env_bak.png" alt=""></p>
+<p>Nothing else could be found at the challenge site with popular wordlists. We can create a wordlist using words retrieved from the website using cewl. Cewl manages to generate a wordlist with 43 words.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cewl -w custom_wordlist.txt http://144.202.34.159/words/ 
+</code></pre></div><p><img src="/images/aspire-ctf-web/8-3.png" alt=""></p>
+<p>Using the custom wordlist, we discover two new paths.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wfuzz -c --hc <span style="color:#ae81ff">404</span> -w custom_wordlist.txt http://144.202.34.159/words/FUZZ/ 
+</code></pre></div><p><img src="/images/aspire-ctf-web/8-4.png" alt=""></p>
+<p>Navigating to one of the discovered paths, computerphIles, we get this page.
+<img src="/images/aspire-ctf-web/8-6.png" alt="">
+We are told that vim was used to edit the page. Vim creates a swap file when editing a file in the form ‘.filename.swp’ for recovery purposes. This also prevents multiple instances of vim editing the same file. More information can be read here. Since our main file is index.html, the vim swap file would be ‘.index.html.swp’. Accessing this via the browser shows no content change but if we view the source code, we obtain the flag.</p>
+<p><img src="/images/aspire-ctf-web/8-7.png" alt=""></p>
+<p>Accessing the other discovered path, we get this webpage.
+<img src="/images/aspire-ctf-web/8-9.png" alt=""></p>
+<p>Using our cewl wordlist together with seclists mosts common extensions, we get an archive, compartmentalize.tar.gz.
+<img src="/images/aspire-ctf-web/8-10.png" alt="">
+Downloading and extracting the archive, we get a flag.txt with our flag in it.
+<img src="/images/aspire-ctf-web/8-11.png" alt=""></p>
+<h2 id="executor">Executor</h2>
+<h3 id="challenge-description-a-vulnerability-exists-find-it-and-get-the-flag">Challenge Description: A vulnerability exists. Find it and get the flag</h3>
+<p>We didn’t manage to solve this challenge within the ctf period. Accessing the challenge site yields a blank page with pre tags.
+<img src="/images/aspire-ctf-web/9-1.png" alt="">
+Using arjun, we discover ip parameter
+<img src="/images/aspire-ctf-web/9-2.png" alt="">
+Specifying localhost as the payload, we get ping statistics for localhost. Sweet, we can now try and find command injection vulnerability
+<img src="/images/aspire-ctf-web/9-5.png" alt="">
+Chaining the commands finally worked using pipe.
+<img src="/images/aspire-ctf-web/9-6.png" alt="">
+Displaying the txt file using cat but it didn’t work. Time to figure out why. Possibly there is a WAF filtering our requests.
+<img src="/images/aspire-ctf-web/9-7.png" alt="">
+Turns out the word cat is filtered out. This can be bypassed in different ways. One way could be using ‘cacatt’ so that even after filtering out, its still valid. What if ‘cat’ is recursively filtered out, this wouldn’t work. There are a couple of evasion techniques to try out from secjuice, payload all the things and many more.
+<img src="/images/aspire-ctf-web/9-8.png" alt=""></p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Tukmen Mogoria </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://example.com/2021/aspire-ctf-web/>https://example.com/2021/aspire-ctf-web/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                This article uses the <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons Attribution-Non-Commercial Use 4.0 International License Agreement</a >Permit
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://example.com/tags/aspire/">
+                    #Aspire</a></span>
+            
+            <span class="tag"><a href="https://example.com/tags/ctf/">
+                    #CTF</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://example.com">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2021 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://example.com">Tukmen Mogoria</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>
