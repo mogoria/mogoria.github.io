@@ -1,22 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>CTF on tukmogi</title>
-    <link>https://mogoria.github.io/tags/ctf/</link>
-    <description>Recent content in CTF on tukmogi</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 06 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mogoria.github.io/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AspireCTF Web Challenge</title>
-      <link>https://mogoria.github.io/2021/aspire-ctf-web/</link>
-      <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://mogoria.github.io/2021/aspire-ctf-web/</guid>
-      <description>Introduction This is a writeup on the Web Challenge of the Aspire CTF - 2021.
-AgentX Challenge Description: Where are you from? Challenge site The paste contained the ips below
-62.210.105.116 51.77.135.89 171.25.193.78 171.25.193.20 185.220.101.208 171.25.193.77 185.165.168.229 185.220.102.8 162.247.72.199 107.189.10.27 106.12.102.21 Following the access link, there is a PHP page that displays the IP address and errors out, Invalid Access! We can try to find out how developers access the IP address of a client.</description>
-    </item>
-    
-  </channel>
-</rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>CTF - Tag - tukmogi blog</title><link>https://mogoria.github.io/tags/ctf/</link><description>CTF - Tag - tukmogi blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 06 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mogoria.github.io/tags/ctf/" rel="self" type="application/rss+xml"/><item><title>AspireCTF Web Challenge</title><link>https://mogoria.github.io/posts/aspire-ctf-web/</link><pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate><author><name>tukmogi</name></author><guid>https://mogoria.github.io/posts/aspire-ctf-web/</guid><description>&lt;div class="featured-image">
+&lt;img src="/images/aspire-ctf-web/aspire-web-thumb.png" referrerpolicy="no-referrer">
+&lt;/div>IntroductionThis is a writeup on the Web Challenge of the Aspire CTF - 2021.
+AgentXChallenge Description Where are you from? Challenge site The paste contained the ips below
+62.210.105.116 51.77.135.89 171.25.193.78 171.25.193.20 185.220.101.208 171.25.193.77 185.165.168.229 185.220.102.8 162.247.72.199 107.189.10.27 106.12.102.21 Following the access link, there is a PHP page that displays the IP address and errors out, Invalid Access! We can try to find out how developers access the IP address of a client.</description></item></channel></rss>
